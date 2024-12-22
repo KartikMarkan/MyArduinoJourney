@@ -1,0 +1,11 @@
+void setup() {
+pinMode(8,OUTPUT); //sets pin 8 as output LED
+pinMode(9,INPUT); //sets pin 9 as input pin pushButton
+}
+void loop() {
+if (digitalRead(9)== HIGH) { // Making a if state ment based on pressing the push button
+digitalWrite(8,HIGH); } // Start LED
+else {
+digitalWrite(8,LOW); // Turn off LED
+}
+}
