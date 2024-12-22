@@ -1,0 +1,15 @@
+int count = 0; void setup() {
+Serial.begin(9600);
+pinMode(9,INPUT); // initilize the count variable with 0
+// starts serial communication between arduino and
+// pin 9 set as input
+}
+void loop() {
+if(digitalRead(9)==HIGH) {
+}
+// when pin reads 9 as high
+Serial.print("You pressed button"); // print string
+Serial.print(count++); // increse counter by 1 when button pressed
+Serial.println("times"); // print times
+while(digitalRead(9)==HIGH); // it stops loop untill pin reads low
+}
