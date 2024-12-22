@@ -1,0 +1,24 @@
+// Printing values on Serial monitor
+
+// giving values of the varible " count" and setting it zero
+
+int counterValue = 0; 
+
+void setup() {
+// put your setup code here, to run once:
+
+// Start the Serial communication
+Serial.begin(9600);
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+
+// Print the snetence first
+Serial.print("value is.... ");
+
+// Next print the value
+Serial.println(counterValue++); // we use this to keep on printing values in a loop
+
+// with this, we print a value and then print another value in sequence
+delay(1000);
+}
