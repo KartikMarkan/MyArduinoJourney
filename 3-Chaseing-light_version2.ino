@@ -1,3 +1,4 @@
+//Chasing light version 2, turns all lights on first and then turn all lights off
 void setup() {
   // put your setup code here, to run once:
   for (int i = 13; i >= 6; i--) {
@@ -9,7 +10,6 @@ void loop() {
   for (int i = 13; i >= 6; i--) {
     digitalWrite(i, HIGH);
     delay(100);
-   // digitalWrite(i, LOW);
   }
 
    for (int i = 13; i >= 6; i--) {
