@@ -1,0 +1,9 @@
+void setup() {
+Serial.begin(9600); // Starts Serial Communication between computer and arduino
+pinMode(3,INPUT); // set pin 3 as input pin
+}
+void loop() {
+int state = digitalRead(3); 
+Serial.println(state);
+delay(1000);
+}
