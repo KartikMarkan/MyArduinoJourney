@@ -1,3 +1,4 @@
+// This chasing lights turn one light on and off 
 void setup() {
   // put your setup code here, to run once:
   for (int i = 13; i >= 6; i--) {
