@@ -1,0 +1,11 @@
+void setup() {
+pinMode(A0,INPUT); // sets the A0 pin as potatiometer input
+pinMode(9,OUTPUT); // set pin 9 pin as pwm output pin
+Serial.begin(115200); // starts serial communication between computer
+}
+void loop() {
+int val=analogRead(A0); // analog read value of A0 is stored 
+int pwm_val=map(val,0,1023,0,255); 
+Serial.print(val); 
+Serial.print(" "); 
+}
